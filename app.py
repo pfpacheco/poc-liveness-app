@@ -28,7 +28,7 @@ detector_net = cv2.dnn.readNetFromCaffe(proto_path, model_path)
 	
 # load the liveness detector model and label encoder from disk
 liveness_model = tf.keras.models.load_model(args['model'])
-liveness_model.save('liveness.h5', save_format='h5')
+liveness_model.save('liveness.keras', save_format='keras')
 le = pickle.loads(open(args['le'], 'rb').read())
 
 
