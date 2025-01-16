@@ -1,8 +1,4 @@
-cmake
-opencv-python-headless
-streamlit-webrtc
 tensorflow
-imutils
-pickle-mixin
-scikit-learn
-av
+opencv-python
+keras
+numpy
